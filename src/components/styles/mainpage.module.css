@@ -1,0 +1,79 @@
+.btnSort {
+  margin: 0.1rem;
+  outline-color: ghostwhite;
+  color: ghostwhite;
+  background-color: ghostwhite;
+}
+
+.btnAdd {
+  background-color: #303030;
+  border-radius: 3%;
+  text-align: center;
+}
+
+.darkbg {
+  background-color: #303030;
+}
+
+.navbar {
+  background-color: #204051;
+}
+
+.logo {
+  color: ghostwhite;
+}
+
+.coverImageThumbnail {
+  width: 100%;
+  border-radius: 4%;
+}
+
+.coverImageModal {
+  max-width: 100%;
+  height: auto;
+}
+
+.sortbar {
+  background-color: #303030;
+  border-radius: 3%;
+  text-align: center;
+}
+
+.sidebar, .sideBarContainer {
+  display: block;
+}
+
+.comicThumbnail {
+  background-color: #555555;
+  color: ghostwhite;
+  border: 1px solid #202020;
+  box-shadow: 2px 2px #202020;
+  border-radius: 4%;
+  margin-top: 1rem;
+}
+
+.comicThumbnail:hover {
+  box-shadow: 1px 1px #3b6978;
+  background-color: #656565;
+}
+
+.comicModal {
+  min-width: 90%;
+  color: ghostwhite;
+}
+
+.secondaryModalButton {
+  background-color: #5e8091;
+}
+
+.primaryModalButton {
+  background-color: #204051;
+}
+
+/* Colors
+#e4e3e3
+#84a9ac
+#3b6978
+#5e8091
+#204051
+*/
