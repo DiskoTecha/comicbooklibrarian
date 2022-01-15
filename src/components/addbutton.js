@@ -101,6 +101,8 @@ function AddButton(props) {
             <form>
               <input
                 name="title"
+                type="text"
+                id="title"
                 value={inputs.title}
                 onChange={changeInputs}
               />
@@ -113,56 +115,82 @@ function AddButton(props) {
               <div className="col-sm">
               {
                 <form>
-                  <p>Publisher</p>
+                  <label for="publisher">Publisher </label>
                   <input
+                    type="text"
+                    id="publisher"
                     name="publisher"
                     value={inputs.publisher}
                     onChange={changeInputs}
                   />
-                  <p>Issue</p>
+                  <br/>
+                  <label for="issue">Issue </label>
                   <input
+                    type="number"
+                    id="issue"
                     name="issue"
                     value={inputs.issue}
                     onChange={changeInputs}
                   />
-                  <p>Month</p>
+                  <br/>
+                  <label for="month">Month </label>
                   <input
+                    type="text"
+                    id="month"
                     name="month"
                     value={inputs.month}
                     onChange={changeInputs}
                   />
-                  <p>Year</p>
+                  <br/>
+                  <label for="year">Year </label>
                   <input
+                    type="number"
+                    id="year"
                     name="year"
                     value={inputs.year}
                     onChange={changeInputs}
                   />
-                  <p>Cover Price</p>
+                  <br/>
+                  <label for="coverPrice">Cover Price </label>
                   <input
+                    type="number"
+                    id="coverPrice"
                     name="coverPrice"
                     value={inputs.coverPrice}
                     onChange={changeInputs}
                   />
-                  <p>UPC</p>
+                  <br/>
+                  <label for="upcCode">UPC </label>
                   <input
+                    type="text"
+                    id="upcCode"
                     name="upcCode"
                     value={inputs.upcCode}
                     onChange={changeInputs}
                   />
-                  <p>Bar Code</p>
+                  <br/>
+                  <label for="barCode">Barcode </label>
                   <input
+                    type="text"
+                    id="barCode"
                     name="barCode"
                     value={inputs.barCode}
                     onChange={changeInputs}
                   />
-                  <p>Quantity</p>
+                  <br/>
+                  <label for="quantity">Quantity </label>
                   <input
+                    type="number"
+                    id="quantity"
                     name="quantity"
                     value={inputs.quantity}
                     onChange={changeInputs}
                   />
-                  <p>Cover Photo</p>
+                  <br/>
+                  <label for="coverPhoto">Cover Photo </label>
                   <input
+                    type="text"
+                    id="coverPhoto"
                     name="coverPhoto"
                     value={inputs.coverPhoto}
                     onChange={changeInputs}

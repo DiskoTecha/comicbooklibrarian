@@ -2,6 +2,7 @@ import React, {useState} from "react";
 import styles from "./styles/mainpage.module.css";
 import Modal from "react-bootstrap/Modal";
 import Button from "react-bootstrap/Button";
+import axios from 'axios';
 
 
 function ComicThumbnail(props) {
@@ -50,10 +51,14 @@ function ComicThumbnail(props) {
 
   function openDeleteDialogue(e) {
     if (window.confirm("Delete this comic?")) {
-      // Use axios to call API to delete specific comic, then reload window to redisplay
-    }
+      axios.delete('http://localhost:4000/api/comics/delete/' + props.data._id)
+        .then(res => {
+          window.location.reload();
+          console.log(res.json);
+        });
 
-    e.preventDefault();
+      e.preventDefault();
+    }
   }
 
   return (
